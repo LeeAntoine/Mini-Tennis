@@ -1,4 +1,4 @@
-package com.edu4java.minitennis6;
+package TennisSimple;
 
 import java.awt.Graphics2D;
 import java.awt.Rectangle;
