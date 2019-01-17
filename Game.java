@@ -13,7 +13,7 @@ import javax.swing.JPanel;
 public class Game extends JPanel {
 
 	Ball ball = new Ball(this);
-	Racquet racquet = new Racquet(this);
+	Board Board = new Board(this);
 
 	public Game() {
 		addKeyListener(new KeyListener() {
@@ -36,7 +36,7 @@ public class Game extends JPanel {
 	
 	private void move() {
 		ball.move();
-		racquet.move();
+		Board.move();
 	}
 
 	@Override
@@ -46,7 +46,7 @@ public class Game extends JPanel {
 		g2d.setRenderingHint(RenderingHints.KEY_ANTIALIASING,
 				RenderingHints.VALUE_ANTIALIAS_ON);
 		ball.paint(g2d);
-		racquet.paint(g2d);
+		Board.paint(g2d);
 	}
 	
 	public void gameOver() {
